@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Notifications page</title>
+</head>
+<body>
+  <header>
+    <section>
+      <div id="notification_num">
+        <h1>Notifications</h1>
+        <h2 id="number_n">7</h2>
+      </div>
+      <div>
+        <h6 id="mark_asread">Mark all as read</h6>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="notification" ondblclick="changeColor(this)">
+      <img src="./assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber">
+      <div>
+        <h5>Mark Webber</h5>
+        <p class="action">reacted to your recent post</p>
+        <p class="event">My first tournament today!</p>
+        <div class="sign_container"><span class="unread"></span></div>
+        <p class="time_ago">1m ago</p>
+      </div>
+    </div>
+    <div class="notification" ondblclick="changeColor(this)">
+      <img src="./assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray">
+      <div>
+        <h5>Angela Gray</h5>
+        <p class="action">followed you</p>
+        <div class="sign_container"><span class="unread"></span></div>
+        <p class="time_ago">5m ago</p>
+      </div>
+    </div>
+    <div class="notification" ondblclick="changeColor(this)">
+      <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson">
+      <div>
+        <h5>Jacob Thompson</h5>
+        <p class="action">has joined your group</p>
+        <p class="event_game">Chess Club</p>
+        <div class="sign_container"><span class="unread"></span></div>
+        <p class="time_ago">1 day ago</p>
+      </div>
+    </div>
+    <div class="notification" ondblclick="changeColor(this)">
+      <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin">
+      <div>
+        <h5>Rizky Hasanuddin</h5>
+        <p class="action">sent you a private message</p>
+        <div class="sign_container"><span class="unread"></span></div>
+        <p class="time_ago">5 days ago</p>
+        <p class="message_preview">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
+          and
+          I'm already having lots of fun and improving my game.</p>
+      </div>
+    </div>
+    <div class="notification" ondblclick="changeColor(this)">
+      <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith">
+      <div>
+        <h5>Kimberly Smith</h5>
+        <p class="action">commented on your picture</p>
+        <div class="sign_container"><span class="unread"></span></div>
+        <p class="time_ago">1 week ago</p>
+      </div>
+      <img class="action_image" src="./assets/images/image-chess.webp" alt="avatar-chess">
+    </div>
+    <div class="notification" ondblclick="changeColor(this)">
+      <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson">
+      <div>
+        <h5>Nathan Peterson</h5>
+        <p class="action">reacted to your recent post</p>
+        <p class="event">5 end-game strategies to increase your win rate</p>
+        <div class="sign_container"><span class="unread"></span></div>
+        <p class="time_ago">2 weeks ago</p>
+      </div>
+    </div>
+    <div class="notification" ondblclick="changeColor(this)">
+      <img src="./assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim">
+      <div>
+        <h5>Anna Kim</h5>
+        <p class="action">left the group</p>
+        <p class="event_game">Chess Club</p>
+        <div class="sign_container"><span class="unread"></span></div>
+        <p class="time_ago">2 weeks ago</p>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

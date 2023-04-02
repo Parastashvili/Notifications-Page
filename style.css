@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+    font-family: 'Plus Jakarta Sans';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 343px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.sign_container {
+    display: inline;
+}
+
+#notification_num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.unread {
+    display: inline-block;
+    background-color: #F65552;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.message_preview {
+    width: 229px;
+    background: #FFFFFF;
+    border: 1px solid #DDE7EE;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5E6778;
+    padding: 16px;
+    margin-top: 12px;
+
+}
+
+.message_preview:hover {
+    background: #E5EFFA;
+    border: 1px solid #DDE7EE;
+    border-radius: 5px;
+    color: #5E6778;
+    cursor: pointer;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1C202B;
+}
+
+h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #5E6778;
+    cursor: pointer;
+}
+
+h6:hover {
+    color: #0A327B;
+}
+
+#number_n {
+    width: 32px;
+    height: 25px;
+    background: #0A327B;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9px;
+}
+
+.notification {
+    display: flex;
+    flex-direction: row;
+    width: 311px;
+    background-color: #F7FAFD;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 16px;
+}
+
+.event {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5E6778;
+
+}
+
+.event:hover {
+    color: #0A327B;
+    cursor: pointer;
+}
+
+.event_game {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0A327B;
+}
+
+.event_game:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 39px;
+    height: 39px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1C202B;
+    display: inline;
+    margin-top: 16px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.action_image {
+    margin-left: auto;
+}
+
+h5:hover {
+    color: #0A327B;
+}
+
+.time_ago {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #939CAD;
+    margin-top: 3px;
+}
+
+.action {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5E6778;
+    display: inline;
+    margin-top: 16px;
+}
+
+@media (min-width:1440px) {
+    body {
+        width: 730px;
+        margin: auto;
+        margin-top: 63px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
+        border-radius: 15px;
+    }
+
+    html {
+        background-color: #F9FAFD;
+        ;
+    }
+
+    .notification {
+        width: 638px;
+    }
+
+    section {
+        width: 670px;
+    }
+
+    .message_preview {
+        width: 534px;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .action {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .event {
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    .time_ago {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
